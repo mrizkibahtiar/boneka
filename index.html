@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a>push this button!</a>
+    <div class="boneka muncul-hilang">
+        <div class="kepala">
+            <div class="telinga">
+                <div class="dalam"></div>
+            </div>
+            <div class="telinga">
+                <div class="dalam"></div>
+            </div>
+            <div class="mata"></div>
+            <div class="mata"></div>
+            <div class="container-mulut">
+                <div class="mulut">
+                    <div class="senyum"></div>
+                    <div class="hidung"></div>
+                    <div class="kumis-kiri">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="kumis-kanan">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="baju">
+            <p class="syahira">halo!</p>
+            <div class="tangan-kiri">
+                <div class="garis"></div>
+                <div class="garis"></div>
+            </div>
+            <div class="tangan-kanan">
+                <div class="garis"></div>
+                <div class="garis"></div>
+            </div>
+        </div>
+        <div class="bawah">
+            <div class="kaki"></div>
+            <div class="kaki"></div>
+        </div>
+    </div>
+    <script>
+        const tombol = document.querySelector('a');
+        const boneka = document.querySelector('.boneka');
+        tombol.addEventListener('click', function() {
+            boneka.classList.toggle('muncul-hilang')
+        })
+    </script>
+</body>
+</html>

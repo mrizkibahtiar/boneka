@@ -1,0 +1,288 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+a {
+  width: fit-content;
+  border-radius: 5px;
+  font-weight: 500;
+  height: fit-content;
+  padding: 5px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: inline-block;
+  background-color: red;
+  color: white;
+  transition: 300ms;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+a:hover {
+  background-color: #b20000;
+  box-shadow: 0.2px 0.2px 5px rgba(0, 0, 0, 0.5);
+}
+.boneka {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  scale: 1;
+  transition: all;
+  transition-duration: 300ms;
+}
+.muncul-hilang {
+  scale: 0;
+}
+.kepala {
+  width: 130px;
+  height: 100px;
+  border-top-right-radius: 40%;
+  border-top-left-radius: 40%;
+  background-color: #ea863f;
+  position: relative;
+  top: 20px;
+}
+.telinga:nth-child(1) {
+  width: 50px;
+  height: 50px;
+  background-color: #ea863f;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  position: absolute;
+  top: -5px;
+  left: -13px;
+  rotate: -40deg;
+}
+
+.telinga:nth-child(2) {
+  width: 50px;
+  height: 50px;
+  background-color: #ea863f;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  rotate: 40deg;
+  position: absolute;
+  top: -5px;
+  right: -13px;
+}
+.telinga:nth-child(1) .dalam {
+  background-color: #eac6af;
+  width: 30px;
+  height: 20px;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  top: 7px;
+  right: 10px;
+  position: absolute;
+  rotate: -5deg;
+}
+.telinga:nth-child(2) .dalam {
+  background-color: #eac6af;
+  width: 30px;
+  height: 20px;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  top: 7px;
+  right: 10px;
+  position: absolute;
+  rotate: 5deg;
+}
+.mata:nth-child(3) {
+  width: 12px;
+  height: 12px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  left: 40px;
+  top: 40px;
+}
+.mata:nth-child(4) {
+  width: 12px;
+  height: 12px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  right: 40px;
+  top: 40px;
+}
+
+.hidung {
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  width: 0;
+  height: 0;
+  border-top: 20px solid black;
+  border-right: 20px solid transparent;
+  border-left: 20px solid transparent;
+  position: absolute;
+  top: -1px;
+  right: 20.5px;
+}
+
+.container-mulut {
+  width: 100px;
+  height: 50px;
+  background-color: #ea863f;
+  position: absolute;
+  bottom: -10px;
+  margin-inline: 15%;
+  border-radius: 90%;
+}
+
+.mulut {
+  width: 80px;
+  height: 40px;
+  background-color: #eac6af;
+  position: absolute;
+  border-radius: 90%;
+  margin-inline: 8%;
+}
+
+.senyum {
+  width: 40px;
+  height: 20px;
+  border-radius: 40%;
+  border-bottom: 2px solid black;
+  position: absolute;
+  bottom: 7px;
+  right: 20px;
+}
+
+.kumis-kiri span {
+  display: inline-block;
+  width: 25px;
+  height: 2px;
+  background-color: black;
+}
+.kumis-kiri span:nth-child(1) {
+  position: absolute;
+  top: 5px;
+  left: -10px;
+  rotate: 5deg;
+}
+.kumis-kiri span:nth-child(2) {
+  position: absolute;
+  top: 16px;
+  left: -10px;
+}
+.kumis-kiri span:nth-child(3) {
+  position: absolute;
+  bottom: 11px;
+  left: -10px;
+  rotate: -5deg;
+}
+.kumis-kanan span {
+  display: inline-block;
+  width: 25px;
+  height: 2px;
+  background-color: black;
+}
+.kumis-kanan span:nth-child(1) {
+  position: absolute;
+  top: 5px;
+  right: -10px;
+  rotate: -5deg;
+}
+.kumis-kanan span:nth-child(2) {
+  position: absolute;
+  top: 16px;
+  right: -10px;
+}
+.kumis-kanan span:nth-child(3) {
+  position: absolute;
+  bottom: 11px;
+  right: -10px;
+  rotate: 5deg;
+}
+.baju {
+  width: 187px;
+  height: 160px;
+  background-color: #ecee81;
+  top: 8px;
+  z-index: -2;
+  position: relative;
+  border-radius: 35%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.tangan-kiri {
+  width: 40px;
+  height: 80px;
+  background-color: #ea863f;
+  position: absolute;
+  left: 0;
+  bottom: 8px;
+  border-bottom-left-radius: 50%;
+}
+.tangan-kanan {
+  width: 40px;
+  height: 80px;
+  background-color: #ea863f;
+  position: absolute;
+  right: 0;
+  bottom: 8px;
+  border-bottom-right-radius: 50%;
+}
+.tangan-kiri .garis {
+  width: 20px;
+  border-left: 2px solid rgba(118, 67, 31, 0.5);
+  height: 30px;
+  border-radius: 30%;
+  rotate: -10deg;
+}
+.tangan-kiri .garis:nth-child(1) {
+  position: absolute;
+  left: 8px;
+  bottom: 3px;
+}
+.tangan-kiri .garis:nth-child(2) {
+  position: absolute;
+  right: -4px;
+  bottom: 2px;
+}
+.tangan-kanan .garis {
+  width: 20px;
+  border-right: 2px solid rgba(118, 67, 31, 0.5);
+  height: 30px;
+  border-radius: 30%;
+  rotate: 10deg;
+}
+.tangan-kanan .garis:nth-child(1) {
+  position: absolute;
+  right: 8px;
+  bottom: 3px;
+}
+.tangan-kanan .garis:nth-child(2) {
+  position: absolute;
+  left: -4px;
+  bottom: 2px;
+}
+.syahira {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 50px;
+  display: inline-block;
+}
+.bawah {
+  width: 130px;
+  height: 40px;
+  border-bottom-left-radius: 30%;
+  border-bottom-right-radius: 30%;
+  background-color: #ea863f;
+  position: relative;
+}
+.kaki {
+  width: 60px;
+  height: 40px;
+  background-color: rgb(118, 67, 31);
+  border-radius: 40%;
+}
+.kaki:nth-child(1) {
+  position: absolute;
+  bottom: -10px;
+}
+.kaki:nth-child(2) {
+  position: absolute;
+  right: 0;
+  bottom: -10px;
+}
